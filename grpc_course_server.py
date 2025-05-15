@@ -8,7 +8,7 @@ from core.grpc.course_service_pb2_grpc import (
 from core.grpc.course_service_pb2 import GetCourseResponse
 
 
-class CourseServiseServiser(CourseServiceServicer):
+class CourseServiseServisers(CourseServiceServicer):
     def GetCourse(self, request, context):
         print(f"Получили запрос курса с id: {request.course_id}")
         data = {
@@ -16,12 +16,12 @@ class CourseServiseServiser(CourseServiceServicer):
             "title": "Автотесты API",
             "description": "Будем изучать написание API автотестов",
         }
-        return GetCourseResponse(data)
+        return GetCourseResponse(**data)
 
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    add_CourseServiceServicer_to_server(CourseServiceServicer(), server)
+    add_CourseServiceServicer_to_server(CourseServiseServisers(), server)
     server.add_insecure_port("[::]:50051")
     server.start()
     print("Сервер запущен на порту: 50051...")
