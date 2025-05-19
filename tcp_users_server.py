@@ -28,9 +28,6 @@ def server():
         database.save_message(client_address[0], data)
 
         all_messages = database.get_message_list_by_address(client_address[0])
-        # for message in all_messages:
-
-        #     client_socket.send(message.encode())
 
         client_socket.send("\n".join(all_messages).encode())
 
