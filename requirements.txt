@@ -3,3 +3,4 @@ grpcio-tools
 websockets
 httpx
 pydantic
+jsonschema
