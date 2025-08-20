@@ -4,3 +4,5 @@ websockets
 httpx
 pydantic
 jsonschema
+pytest
+faker
