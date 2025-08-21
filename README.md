@@ -26,4 +26,9 @@ $ pip install -r requirements.txt
 
 ## Запуск тестов.
 
+```
+python -m pytest -k "test_authentication" -s -v
+
+```
+
 
