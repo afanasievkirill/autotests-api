@@ -74,7 +74,6 @@ class TestCourses:
         courses_client: CoursesClient,
         function_user: UserFixture,
         function_file: FileFixture,
-        function_course: CourseFixture,
     ):
         request = CreateCourseRequestSchema(
             preview_file_id=function_file.response.file.id,
