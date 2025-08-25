@@ -7,3 +7,4 @@ jsonschema
 pytest
 faker
 allure-pytest
+pydantic-settings

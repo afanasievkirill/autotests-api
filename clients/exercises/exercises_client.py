@@ -40,7 +40,7 @@ class ExercisesClient(APIClient):
         response = self.get_exercises_api(query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
-    @allure.step("Get exercise by id {course_id}")
+    @allure.step("Get exercise by id {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получение информации о задании по айди.
@@ -70,7 +70,7 @@ class ExercisesClient(APIClient):
         response = self.create_exercise_api(request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
-    @allure.step("Update exercise by id {course_id}")
+    @allure.step("Update exercise by id {exercise_id}")
     def update_exercise_api(
         self, exercise_id: str, request: UpdateExerciseRequestSchema
     ) -> Response:
@@ -91,7 +91,7 @@ class ExercisesClient(APIClient):
         response = self.update_exercise_api(exercise_id, request)
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
-    @allure.step("Delete exercise by id {course_id}")
+    @allure.step("Delete exercise by id {exercise_id}")
     def delete_exercise_api(self, exercise_id: str):
         """
         Метод удаления задания.
