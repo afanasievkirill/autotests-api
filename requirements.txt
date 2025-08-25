@@ -8,3 +8,4 @@ pytest
 faker
 allure-pytest
 pydantic-settings
+pytest-xdist

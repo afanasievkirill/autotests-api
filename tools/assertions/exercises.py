@@ -14,6 +14,10 @@ from clients.errors_schema import (
 )
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response
+from tools.logger import get_logger
+
+logger = get_logger("EXERCISE_ASSERTIONS")
+
 
 @allure.step("Check exercise")
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
@@ -24,6 +28,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     :param expected: Ожидаемые данные упражнения.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check exercise")
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.course_id, expected.course_id, "course_id")
@@ -32,6 +37,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.order_index, expected.order_index, "order_index")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
+
 
 @allure.step("Check update exercise response")
 def assert_update_exercise_response(
@@ -45,6 +51,7 @@ def assert_update_exercise_response(
     :param expected: Ожидаемые данные упражнения.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check update exercise response")
     assert_equal(
         update_exercise_response.exercise.title, update_exercise_request.title, "title"
     )
@@ -74,14 +81,17 @@ def assert_update_exercise_response(
         "estimated_time",
     )
 
+
 @allure.step("Check get exercise response")
 def assert_get_exercise_response(
     get_exersice_response: GetExerciseResponseSchema,
     create_exercise_response: CreateExerciseResponseSchema,
 ):
+    logger.info("Check get exercise response")
     actual = get_exersice_response.exercise
     expected = create_exercise_response.exercise
     assert_exercise(actual, expected)
+
 
 @allure.step("Check create exercise response")
 def assert_create_exercise_response(
@@ -94,6 +104,7 @@ def assert_create_exercise_response(
     :param expected: Ожидаемые данные упражнения.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check create exercise response")
     assert_equal(actual.exercise.title, expected.title, "title")
     assert_equal(actual.exercise.course_id, expected.course_id, "course_id")
     assert_equal(actual.exercise.max_score, expected.max_score, "max_score")
@@ -104,6 +115,7 @@ def assert_create_exercise_response(
         actual.exercise.estimated_time, expected.estimated_time, "estimated_time"
     )
 
+
 @allure.step("Check exercise not found response")
 def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     """
@@ -112,7 +124,6 @@ def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     :param actual: Фактический ответ.
     :raises AssertionError: Если фактический ответ не соответствует ошибке "Exercise not found"
     """
-    # Ожидаемое сообщение об ошибке, если файл не найден
+    logger.info("Check exercise not found response")
     expected = InternalErrorResponseSchema(details="Exercise not found")
-    # Используем ранее созданную функцию для проверки внутренней ошибки
     assert_internal_error_response(actual, expected)

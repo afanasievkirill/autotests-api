@@ -29,6 +29,8 @@ $ pip install -r requirements.txt
 ```
 python -m pytest -k "test_authentication" -s -v
 
+python -m pytest -m "regression" --numprocesses=2
+
 ```
 
 
