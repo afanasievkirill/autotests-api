@@ -47,7 +47,7 @@ class UpdateExerciseRequestSchema(BaseModel):
     max_score: PositiveInt| None = Field(alias="maxScore" , default_factory=fake.max_score)
     min_score: PositiveInt| None  = Field(alias="minScore" , default_factory=fake.min_score)
     order_index: PositiveInt | None = Field(alias="orderIndex", default_factory=fake.integer)
-    description: str | None = Field(alias="estimatedTime", default_factory=fake.text)
+    description: str | None = Field(default_factory=fake.text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
 

@@ -6,3 +6,4 @@ pydantic
 jsonschema
 pytest
 faker
+allure-pytest
