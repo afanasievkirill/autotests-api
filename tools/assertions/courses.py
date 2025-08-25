@@ -1,3 +1,5 @@
+import allure
+
 from clients.courses.courses_schema import (
     UpdateCourseRequestSchema,
     UpdateCourseResponseSchema,
@@ -11,6 +13,7 @@ from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
 
 
+@allure.step("Check update course response")
 def assert_update_course_response(
     request: UpdateCourseRequestSchema, response: UpdateCourseResponseSchema
 ):
@@ -30,6 +33,7 @@ def assert_update_course_response(
     )
 
 
+@allure.step("Check course")
 def assert_course(actual: CourseSchema, expected: CourseSchema):
     """
     Проверяет, что фактические данные курса соответствуют ожидаемым.
@@ -44,15 +48,13 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     assert_equal(actual.min_score, expected.min_score, "min_score")
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
-
-    # Проверяем вложенные сущности
     assert_file(actual.preview_file, expected.preview_file)
     assert_user(actual.created_by_user, expected.created_by_user)
-
     assert_equal(actual.preview_file.id, expected.preview_file.id, "file-id")
     assert_equal(actual.created_by_user.id, expected.created_by_user.id, "user-id")
 
 
+@allure.step("Check get courses response")
 def assert_get_courses_response(
     get_courses_response: GetCoursesResponseSchema,
     create_course_responses: list[CreateCourseResponseSchema],
@@ -65,13 +67,13 @@ def assert_get_courses_response(
     :raises AssertionError: Если данные курсов не совпадают.
     """
     assert_length(get_courses_response.courses, create_course_responses, "courses")
-
     for index, create_course_response in enumerate(create_course_responses):
         assert_course(
             get_courses_response.courses[index], create_course_response.course
         )
 
 
+@allure.step("Check create course response")
 def assert_create_course_response(
     actual: CreateCourseResponseSchema, expected: CreateCourseRequestSchema
 ):
