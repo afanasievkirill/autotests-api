@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjUzLjY5MjQzNSIsInVzZXJfaWQiOiJlZmQ1ZTI1NS0zMGRiLTQwMjktYTYzMC1mNjNmNTU1OTVlYmMifQ.I48crZNcnoxR58lM8C32vnCiBjC1Yt9r4qH9UWfxsCU' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Suffer computer leg fall employee.","maxScore":51,"minScore":8,"description":"Stock remain job energy month. Word less character mean involve guy line.\nSkill chance heavy indicate minute. Fall water lawyer successful push firm.","estimatedTime":"8 weeks","previewFileId":"44febf9b-6259-419b-807b-2e69f02d81a9","createdByUserId":"efd5e255-30db-4029-a630-f63f55595ebc"}'

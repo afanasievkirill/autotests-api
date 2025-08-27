@@ -1,0 +1,17 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:37 Check that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:107 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:55 Check that "title" equals to Meeting tree style blood thought carry.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "course_id" equals to d871723d-3c2e-487b-9e81-97316432bf0a
+INFO     BASE_ASSERTIONS:base.py:55 Check that "max_score" equals to 67
+INFO     BASE_ASSERTIONS:base.py:55 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:55 Check that "description" equals to Have space year with year line sit. Partner memory above thousand.
+Agency Republican can. Show impact couple teacher. Same local require move list.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "order_index" equals to 28
+INFO     BASE_ASSERTIONS:base.py:55 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

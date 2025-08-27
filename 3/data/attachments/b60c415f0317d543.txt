@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjU2LjM1NjIxNyIsInVzZXJfaWQiOiJiODczOWNkMi1jZmQ0LTQ2MDktODExMi1hMDVjOGFkNjRkZmUifQ.lHlvCCLkcXuddgWDzZkFw64u_oxFRJ-0cWQ9ScYotHo' \
+  -H 'content-length: 342' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Various east simple.","courseId":"13c07d5d-e2d4-4d2f-ab52-ec0716f28d18","maxScore":92,"minScore":8,"orderIndex":26,"description":"Old part test woman into must design.\nBank pull assume wear sometimes race with trouble. Wish sell me person industry responsibility. Clear sing place over real old present.","estimatedTime":"8 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjU2LjYyOTI3OSIsInVzZXJfaWQiOiI1YTc2OTVmMi1mZDYyLTRhNGMtYmIxMC0zZGYyOTIyNjIwN2MifQ.F3pb33twsUSG9p19KIxPhIyIngzHNO5lz9Y6EwtDeE4' \
+  -H 'content-length: 341' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Feeling field successful wall.","maxScore":76,"minScore":15,"description":"By economic meet director anything about. Card assume science together represent those generation. Leg college hope.","estimatedTime":"4 weeks","previewFileId":"2216d380-b70f-4283-9d7f-e8480d026883","createdByUserId":"5a7695f2-fd62-4a4c-bb10-3df29226207c"}'

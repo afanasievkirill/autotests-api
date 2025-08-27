@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/8804abbd-9949-49cd-854f-a14a83901d3e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjUzLjY5MjQzNSIsInVzZXJfaWQiOiJlZmQ1ZTI1NS0zMGRiLTQwMjktYTYzMC1mNjNmNTU1OTVlYmMifQ.I48crZNcnoxR58lM8C32vnCiBjC1Yt9r4qH9UWfxsCU' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nearly here window song institution stage last when.","maxScore":58,"minScore":27,"description":"Establish administration prepare pretty spend note visit. Feeling media arm.\nMany interesting experience stand. Partner ten seat particular player quite.","estimatedTime":"5 weeks"}'

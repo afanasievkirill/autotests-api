@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjU0LjI3NjA2NiIsInVzZXJfaWQiOiIzNDRjZDQ2Mi1iYjAyLTRkNzQtOGIzMi02Njg3YzAyY2ZlNTQifQ.fntVCSkOHPmON1HRFZ0xC_T56IexWVvlsjBhr_XzreE' \
+  -H 'content-length: 368' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Few role five foreign read.","maxScore":95,"minScore":14,"description":"Truth build other goal.\nReport side open environment available draw carry modern. Share hair around catch answer great beat. Wife director offer.","estimatedTime":"7 weeks","previewFileId":"bd4cb4c9-b7a8-479e-bb6e-b6c7acfb7479","createdByUserId":"344cd462-bb02-4d74-8b32-6687c02cfe54"}'

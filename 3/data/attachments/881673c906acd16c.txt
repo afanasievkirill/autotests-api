@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjIwOjU1LjQzMjk1NiIsInVzZXJfaWQiOiIwOGVjMWZhNS1lMGFkLTQ4MGEtODBkZi0zZjE5MDQzNGMzMjcifQ.Am4HKTd2b8LiMBCTPI5VQPEMpH4ljYpRfAiA3oncmic' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Exactly sea our send she drop.","maxScore":100,"minScore":5,"description":"Tough among wait through since else throw. Less myself hit.\nSell south be paper watch. General save dark art six. National upon few food successful. Individual him foreign report trial.","estimatedTime":"2 weeks","previewFileId":"290a0954-a97f-4afd-84c7-3056d9e46a7e","createdByUserId":"08ec1fa5-e0ad-480a-80df-3f190434c327"}'
