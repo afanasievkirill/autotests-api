@@ -1,0 +1,16 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:37 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:93 Check create course response
+INFO     BASE_ASSERTIONS:base.py:55 Check that "title" equals to Professor start affect still.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "max_score" equals to 72
+INFO     BASE_ASSERTIONS:base.py:55 Check that "min_score" equals to 20
+INFO     BASE_ASSERTIONS:base.py:55 Check that "description" equals to Heavy case let. Fear always among beat.
+Room above finally wonder sure notice term. Fast right positive short ready around.
+System large nice several. Instead ability enter.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "estimated_time" equals to 4 weeks
+INFO     BASE_ASSERTIONS:base.py:55 Check that "file-id" equals to 76c57982-8ec7-4533-9559-97f8513c940d
+INFO     BASE_ASSERTIONS:base.py:55 Check that "user-id" equals to c312dd12-f93d-498f-94c2-f8ecb57303b7
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

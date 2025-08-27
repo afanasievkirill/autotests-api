@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjQxLjA2OTc3NyIsInVzZXJfaWQiOiJiMjQ4NWYyYi0wYTRmLTRiZWEtYTBhZS04MTlkMjFlMDhjNTYifQ.2k3XKdkfXtKnFU0maH_42Go-5KJBaAa2fjIwYpYi16E' \
+  -H 'content-length: 313' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Go research edge cause.","maxScore":98,"minScore":12,"description":"In newspaper marriage exactly conference natural use. Building day wish per thus lawyer effect.","estimatedTime":"4 weeks","previewFileId":"12de5da3-5284-4f93-b08b-04c6bda9b232","createdByUserId":"b2485f2b-0a4f-4bea-a0ae-819d21e08c56"}'

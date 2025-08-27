@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjM5LjMzMDM1NiIsInVzZXJfaWQiOiI4NjhmYTg0Mi0zNzUzLTRkYmItYjk1Mi1iMWZjZDZlNjFlZGIifQ.NVRatPxkdv6baVNi9DkjtNqqYaL0XeFbiZ0RnGOoIKw' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Probably economy talk voice why say meet.","maxScore":69,"minScore":19,"description":"Ago field crime wind media up. Real set east.\nAcross world rise. Fear car live really make. Husband something those discover. Size argue about operation back race teacher.","estimatedTime":"9 weeks","previewFileId":"8d01f550-a63b-4365-9494-cb5c7ba5881f","createdByUserId":"868fa842-3753-4dbb-b952-b1fcd6e61edb"}'

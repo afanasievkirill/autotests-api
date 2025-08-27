@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjQwLjc5Njc1NCIsInVzZXJfaWQiOiJhYmM3MzkxYS0yZWRkLTRmOWMtYjQxYS1iNjJmM2U5MjU1NmIifQ.K0ZcvqXJ1Mzk9hW6oBv6bKcErW-FdNCxO3iTaOI3zdc' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Authority quite recent vote.","maxScore":59,"minScore":23,"description":"Three stop shake join party. Determine play gas perhaps hold.\nDebate wide we gas lot also. Beat difficult reality. Simple bit crime more us wide water. Home kitchen increase majority another.","estimatedTime":"8 weeks","previewFileId":"ba737326-2f27-48e5-8496-04f1e4d0a257","createdByUserId":"abc7391a-2edd-4f9c-b41a-b62f3e92556b"}'

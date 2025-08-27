@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjQxLjk3MjY4MyIsInVzZXJfaWQiOiJhNDIxOTAxMi0wNjNiLTQ2NzQtOTlhYi0zM2JmNGM4NjJlZWIifQ.AGqzGQ3baVbY1rwlsoyRmB65A3lgc5ebuILb-Oi4iCc' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Success finish various most approach which something.","maxScore":70,"minScore":25,"description":"Nation health crime. Their partner since support. Whom second tell direction.\nBut likely conference about easy. Truth attention minute evening feeling audience. Turn life learn gun.","estimatedTime":"10 weeks","previewFileId":"9d2d68d5-62d8-48d7-a11a-2f8f130bacf9","createdByUserId":"a4219012-063b-4674-99ab-33bf4c862eeb"}'

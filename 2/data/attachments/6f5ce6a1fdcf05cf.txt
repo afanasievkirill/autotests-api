@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjQyLjI0NTUzNyIsInVzZXJfaWQiOiI3ZjAxOTc4My04OTg5LTQ0YTYtOThmMC00ZTNkOTYxODMxOWUifQ.Y4f6ATtaD3yFV7lSVhVSnSYD4qtYhCf7RxrIpFBVPPM' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Carry experience current live second continue garden.","maxScore":74,"minScore":21,"description":"Her well fill word. Player improve field child recent even population individual. Pattern serve card political clear kid ball hard.","estimatedTime":"9 weeks","previewFileId":"f4707508-056f-4848-95c5-4bcc6d270393","createdByUserId":"7f019783-8989-44a6-98f0-4e3d9618319e"}'

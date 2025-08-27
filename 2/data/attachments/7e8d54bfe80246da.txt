@@ -1,0 +1,31 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/courses?userId=a330d3f9-e4c3-4d61-9df5-66421cdad5c3
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=a330d3f9-e4c3-4d61-9df5-66421cdad5c3
+INFO     BASE_ASSERTIONS:base.py:37 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:74 Check get course response
+INFO     BASE_ASSERTIONS:base.py:20 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:49 Check course
+INFO     BASE_ASSERTIONS:base.py:55 Check that "id" equals to d0a81b0f-ac79-49c3-9dbc-94b87feaabb9
+INFO     BASE_ASSERTIONS:base.py:55 Check that "title" equals to Quickly size attorney pay on.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "max_score" equals to 92
+INFO     BASE_ASSERTIONS:base.py:55 Check that "min_score" equals to 27
+INFO     BASE_ASSERTIONS:base.py:55 Check that "description" equals to Amount raise example responsibility expect send. Deep bad central interview.
+Also move oil there high. Personal prepare happen more a machine however.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "estimated_time" equals to 1 weeks
+INFO     FILES_ASSERTIONS:files.py:53 Check file
+INFO     BASE_ASSERTIONS:base.py:55 Check that "id" equals to fe71e7e5-08c3-4b97-854d-c2bbd8f5e5fe
+INFO     BASE_ASSERTIONS:base.py:55 Check that "url" equals to http://localhost:8000/static/tests/b044b2e1-f9c9-41a3-bc6a-28bc3a1bad3f.png
+INFO     BASE_ASSERTIONS:base.py:55 Check that "filename" equals to b044b2e1-f9c9-41a3-bc6a-28bc3a1bad3f.png
+INFO     BASE_ASSERTIONS:base.py:55 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:35 Check user
+INFO     BASE_ASSERTIONS:base.py:55 Check that "id" equals to a330d3f9-e4c3-4d61-9df5-66421cdad5c3
+INFO     BASE_ASSERTIONS:base.py:55 Check that "email" equals to antonio40@example.org
+INFO     BASE_ASSERTIONS:base.py:55 Check that "last_name" equals to Medina
+INFO     BASE_ASSERTIONS:base.py:55 Check that "first_name" equals to Douglas
+INFO     BASE_ASSERTIONS:base.py:55 Check that "middle_name" equals to Tyler
+INFO     BASE_ASSERTIONS:base.py:55 Check that "file-id" equals to fe71e7e5-08c3-4b97-854d-c2bbd8f5e5fe
+INFO     BASE_ASSERTIONS:base.py:55 Check that "user-id" equals to a330d3f9-e4c3-4d61-9df5-66421cdad5c3
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

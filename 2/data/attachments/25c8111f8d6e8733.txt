@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises/eca11ae1-4314-46a5-9e8e-d735703cb0b1
+INFO     HTTP_CLIENT:event_hooks.py:42 Got response 200 OK from http://localhost:8000/api/v1/exercises/eca11ae1-4314-46a5-9e8e-d735703cb0b1
+INFO     BASE_ASSERTIONS:base.py:37 Check that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:90 Check get exercise response
+INFO     EXERCISE_ASSERTIONS:exercises.py:31 Check exercise
+INFO     BASE_ASSERTIONS:base.py:55 Check that "id" equals to eca11ae1-4314-46a5-9e8e-d735703cb0b1
+INFO     BASE_ASSERTIONS:base.py:55 Check that "title" equals to Set listen look television first personal.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "course_id" equals to 759172ce-ae76-4bd0-9316-3fbb3f6a1023
+INFO     BASE_ASSERTIONS:base.py:55 Check that "max_score" equals to 71
+INFO     BASE_ASSERTIONS:base.py:55 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:55 Check that "description" equals to Find author six prove our key wrong. Help young PM carry whether agreement white.
+INFO     BASE_ASSERTIONS:base.py:55 Check that "order_index" equals to 76
+INFO     BASE_ASSERTIONS:base.py:55 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

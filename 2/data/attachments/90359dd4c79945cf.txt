@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjM5LjkxNTExNSIsInVzZXJfaWQiOiJjMzEyZGQxMi1mOTNkLTQ5OGYtOTRjMi1mOGVjYjU3MzAzYjcifQ.mm8XjMEkz52vMCPzmrNTiaNN5wBrCDaN-BpFVSKS-2Q' \
+  -H 'content-length: 399' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Professor start affect still.","maxScore":72,"minScore":20,"description":"Heavy case let. Fear always among beat.\nRoom above finally wonder sure notice term. Fast right positive short ready around.\nSystem large nice several. Instead ability enter.","estimatedTime":"4 weeks","previewFileId":"76c57982-8ec7-4533-9559-97f8513c940d","createdByUserId":"c312dd12-f93d-498f-94c2-f8ecb57303b7"}'

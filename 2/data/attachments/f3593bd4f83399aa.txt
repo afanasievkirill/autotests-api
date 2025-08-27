@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI3VDEwOjAyOjM4LjczNjAzOCIsInVzZXJfaWQiOiJhMzMwZDNmOS1lNGMzLTRkNjEtOWRmNS02NjQyMWNkYWQ1YzMifQ.BVjx3NxpgKOmu8lRz0IeQnGaN7G3p-Mh3RpJ-PwmaXg' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quickly size attorney pay on.","maxScore":92,"minScore":27,"description":"Amount raise example responsibility expect send. Deep bad central interview.\nAlso move oil there high. Personal prepare happen more a machine however.","estimatedTime":"1 weeks","previewFileId":"fe71e7e5-08c3-4b97-854d-c2bbd8f5e5fe","createdByUserId":"a330d3f9-e4c3-4d61-9df5-66421cdad5c3"}'
